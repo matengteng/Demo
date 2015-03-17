@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="140.0dip"
+    android:background="@color/write"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/shopcart_list_img"
+        android:layout_width="140.0dip"
+        android:layout_height="140.0dip"
+        android:background="@drawable/listitem1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shop_cart_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="新疆富士苹果"
+                android:textSize="19.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="5斤装"
+                android:textColor="#44000000"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:id="@+id/shop_cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="￥99"
+                android:layout_centerVertical="true"
+                android:textColor="@color/yellow"
+                android:textSize="19.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15.0dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_jian"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/amount_less_default" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/amount_edit_bg"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/iv_jia"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/amount_more_default" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

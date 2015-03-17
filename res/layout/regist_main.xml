@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#68A55F" >
+
+        <ImageButton
+            android:id="@+id/back_floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_floating" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/back_floating"
+            android:gravity="center_vertical"
+            android:text="注册果园账户"
+            android:textColor="@color/write"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/log_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:hint="请输入手机号码"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/log_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:hint="设置密码"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/log_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:hint="确认密码"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/log_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:hint="输入验证码"
+        android:inputType="phone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <TextView
+            android:id="@+id/my_log"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text=" 获取验证码   "
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/my_log_two"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:background="#ffff8c00"
+            android:gravity="center"
+            android:text="         登录          "
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

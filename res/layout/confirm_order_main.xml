@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/write"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:orientation="vertical" >
+
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#68A55F" >
+
+        <ImageButton
+            android:id="@+id/back_floation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_floating" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/back_floation"
+            android:gravity="center_vertical"
+            android:text="确认订单"
+            android:textColor="@color/write"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="送货地址"
+                    android:textColor="#66000000" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80.0dip" >
+
+                    <LinearLayout
+                        android:id="@+id/my_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#ffffffff"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/my_name_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                           	android:text="火龙果"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/my_address_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:textColor="#66000000" />
+
+                        <TextView
+                            android:id="@+id/my_address_two_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:textColor="#66000000" />
+
+                        <TextView
+                            android:id="@+id/my_tel_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:textColor="#66000000" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/next" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="配送信息"
+                    android:textColor="#66000000" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:background="#ffffffff" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="配送时间" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="下单后的2-3天送达"
+                        android:textColor="#66000000" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="支付信息"
+                    android:textColor="#66000000" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="#ffffffff"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="支付方式" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="支付宝付款"
+                        android:textColor="#66000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="1.0dip"
+                    android:background="#ffffffff"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="优惠券" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="输入优惠券代码"
+                        android:textColor="#66000000" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/goumai_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffffff" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:background="#44000000" />
+
+                <TextView
+                    android:id="@+id/heji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="合计："
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/total_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/heji"
+                    android:text="2093"
+                    android:textColor="@color/yellow"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/tijiaodingdan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/bac_yellow_change"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="提交订单"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
